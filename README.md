@@ -49,8 +49,8 @@ Data-Processor提供了一个强大的框架，用于处理和验证来自各种
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/data-processor.git
-cd data-processor
+git clone https://github.com/jerry609/data-process.git
+cd data-process/data-processor
 
 # 安装依赖
 pip install -r requirements.txt
