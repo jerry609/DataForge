@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <!-- 背景 -->
+  <rect width="1000" height="500" fill="#f8f9fa" />
+  
+  <!-- 标题 -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">高性能计算与数据预处理模块流程图</text>
+
+  <!-- 数据源 -->
+  <rect x="50" y="100" width="150" height="70" rx="8" ry="8" fill="#e1f5fe" stroke="#01579b" stroke-width="2" />
+  <text x="125" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#01579b">原始数据源</text>
+  
+  <!-- 高性能计算模块 -->
+  <rect x="300" y="80" width="400" height="150" rx="10" ry="10" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="500" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1890ff">高性能计算模块</text>
+  
+  <!-- 高性能计算子模块 -->
+  <rect x="320" y="130" width="110" height="80" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="375" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1890ff">并行处理引擎</text>
+  <text x="375" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">多线程/多进程</text>
+  <text x="375" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">资源分配</text>
+
+  <rect x="445" y="130" width="110" height="80" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="500" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1890ff">内存优化</text>
+  <text x="500" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">数据类型优化</text>
+  <text x="500" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">内存映射</text>
+
+  <rect x="570" y="130" width="110" height="80" rx="5" ry="5" fill="#ffffff" stroke="#1890ff" stroke-width="1" />
+  <text x="625" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1890ff">IO优化</text>
+  <text x="625" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">异步IO</text>
+  <text x="625" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">数据预取</text>
+
+  <!-- 数据预处理模块 -->
+  <rect x="300" y="300" width="400" height="150" rx="10" ry="10" fill="#eaf4f4" stroke="#0f9d58" stroke-width="2" />
+  <text x="500" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f9d58">数据预处理模块</text>
+  
+  <!-- 数据预处理子模块 -->
+  <rect x="320" y="350" width="110" height="80" rx="5" ry="5" fill="#ffffff" stroke="#0f9d58" stroke-width="1" />
+  <text x="375" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#0f9d58">数据清洗</text>
+  <text x="375" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">缺失值/异常值</text>
+  <text x="375" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">噪声过滤</text>
+
+  <rect x="445" y="350" width="110" height="80" rx="5" ry="5" fill="#ffffff" stroke="#0f9d58" stroke-width="1" />
+  <text x="500" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#0f9d58">数据转换</text>
+  <text x="500" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">标准化/归一化</text>
+  <text x="500" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">编码/特征提取</text>
+
+  <rect x="570" y="350" width="110" height="80" rx="5" ry="5" fill="#ffffff" stroke="#0f9d58" stroke-width="1" />
+  <text x="625" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#0f9d58">数据验证</text>
+  <text x="625" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">完整性检查</text>
+  <text x="625" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">业务规则验证</text>
+
+  <!-- 处理后数据 -->
+  <rect x="800" y="100" width="150" height="70" rx="8" ry="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" />
+  <text x="875" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2e7d32">处理后数据</text>
+
+  <!-- 性能监控 -->
+  <rect x="800" y="300" width="150" height="70" rx="8" ry="8" fill="#fff3e0" stroke="#e65100" stroke-width="2" />
+  <text x="875" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#e65100">性能监控</text>
+  <text x="875" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e65100">资源使用/指标</text>
+
+  <!-- 连接线和箭头 -->
+  <!-- 数据源到高性能模块 -->
+  <path d="M 200 135 L 290 135" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <text x="245" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">输入数据</text>
+
+  <!-- 高性能模块到预处理模块 -->
+  <path d="M 500 230 L 500 290" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <rect x="440" y="245" width="120" height="25" rx="12" ry="12" fill="#fff" stroke="#666" stroke-width="1" />
+  <text x="500" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">高效清洗后数据</text>
+
+  <!-- 预处理模块到处理后数据 -->
+  <path d="M 700 230 C 750 230, 750 135, 790 135" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <text x="750" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">直接输出</text>
+
+  <!-- 预处理模块到处理后数据 -->
+  <path d="M 700 375 L 790 135" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <text x="740" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">标准流程输出</text>
+
+  <!-- 高性能监控连接 -->
+  <path d="M 600 230 C 650 230, 750 300, 790 335" stroke="#e65100" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowOrange)" />
+
+  <!-- 预处理监控连接 -->
+  <path d="M 600 450 C 650 450, 750 380, 790 355" stroke="#e65100" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowOrange)" />
+
+  <!-- 模式选择器 -->
+  <rect x="480" y="30" width="40" height="40" rx="20" ry="20" fill="#fff" stroke="#333" stroke-width="2" />
+  <text x="500" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">开关</text>
+  <path d="M 500 70 L 500 80" stroke="#333" stroke-width="2" fill="none" />
+
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e65100" />
+    </marker>
+  </defs>
+
+  <!-- 注释 -->
+  <text x="875" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333" font-style="italic">可选处理路径</text>
+  <path d="M 875 210 L 750 230" stroke="#333" stroke-width="1" stroke-dasharray="3,3" fill="none" />
+  
+  <text x="500" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">注：高性能模块可选启用，根据数据规模和处理需求灵活配置</text>
+</svg>
