@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <!-- 背景和网格 -->
+  <rect width="1000" height="600" fill="#f8f9fa" />
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e6e6e6" stroke-width="1" />
+  </pattern>
+  <rect width="1000" height="600" fill="url(#grid)" />
+
+  <!-- 标题 -->
+  <text x="500" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">用户数据异常检测处理系统架构</text>
+
+  <!-- 数据源 -->
+  <rect x="100" y="120" width="150" height="80" rx="10" ry="10" fill="#4285f4" opacity="0.8" />
+  <text x="175" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">API 数据接入层</text>
+  <text x="175" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">用户数据接收</text>
+
+  <!-- 数据预处理模块 -->
+  <rect x="350" y="120" width="150" height="80" rx="10" ry="10" fill="#0f9d58" opacity="0.8" />
+  <text x="425" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">数据预处理</text>
+  <text x="425" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">清洗</text>
+  <text x="425" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">标准化/归一化</text>
+
+  <!-- 异常检测模块 -->
+  <rect x="600" y="120" width="150" height="80" rx="10" ry="10" fill="#db4437" opacity="0.8" />
+  <text x="675" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">异常检测</text>
+  <text x="675" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">统计方法</text>
+  <text x="675" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">机器学习方法</text>
+
+  <!-- 数据验证模块 -->
+  <rect x="350" y="250" width="150" height="80" rx="10" ry="10" fill="#f4b400" opacity="0.8" />
+  <text x="425" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">数据验证</text>
+  <text x="425" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">完整性检查</text>
+  <text x="425" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">格式验证</text>
+
+  <!-- 特征工程模块 -->
+  <rect x="600" y="250" width="150" height="80" rx="10" ry="10" fill="#4285f4" opacity="0.8" />
+  <text x="675" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">特征工程</text>
+  <text x="675" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">特征选择</text>
+  <text x="675" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">特征转换</text>
+
+  <!-- 数据存储 -->
+  <rect x="350" y="380" width="150" height="80" rx="10" ry="10" fill="#0f9d58" opacity="0.8" />
+  <text x="425" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">数据存储</text>
+  <text x="425" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">处理后数据</text>
+  <text x="425" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">异常记录</text>
+
+  <!-- 下游训练 -->
+  <rect x="600" y="380" width="150" height="80" rx="10" ry="10" fill="#db4437" opacity="0.8" />
+  <text x="675" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">下游模型接口</text>
+  <text x="675" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">模型训练</text>
+  <text x="675" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">模型评估</text>
+
+  <!-- 监控系统 -->
+  <rect x="475" y="500" width="150" height="80" rx="10" ry="10" fill="#f4b400" opacity="0.8" />
+  <text x="550" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">监控系统</text>
+  <text x="550" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">数据质量监控</text>
+  <text x="550" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">处理性能监控</text>
+
+  <!-- 箭头连接 API到预处理 -->
+  <path d="M 250 160 L 350 160" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 预处理到异常检测 -->
+  <path d="M 500 160 L 600 160" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 预处理到数据验证 -->
+  <path d="M 425 200 L 425 250" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 异常检测到特征工程 -->
+  <path d="M 675 200 L 675 250" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 数据验证到存储 -->
+  <path d="M 425 330 L 425 380" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 特征工程到下游模型 -->
+  <path d="M 675 330 L 675 380" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 数据存储到下游模型 -->
+  <path d="M 500 420 L 600 420" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 数据存储到监控 -->
+  <path d="M 425 460 L 425 540 L 475 540" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头连接 下游模型到监控 -->
+  <path d="M 675 460 L 675 540 L 625 540" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- 定义箭头 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+
+  <!-- 数据流标签 -->
+  <text x="300" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">原始数据</text>
+  <text x="550" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">清洗后数据</text>
+  <text x="450" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">预处理数据</text>
+  <text x="700" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">检测后数据</text>
+  <text x="450" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">验证后数据</text>
+  <text x="700" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">特征数据</text>
+  <text x="550" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">训练数据</text>
+
+  <!-- 反馈循环 -->
+  <path d="M 675 460 C 750 460, 800 350, 750 200 C 730 120, 600 80, 525 120" stroke="#555" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)" />
+  <text x="800" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555" transform="rotate(90, 800, 300)">反馈优化循环</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- 背景 -->
+  <rect width="1000" height="800" fill="#f8f9fa" />
+  
+  <!-- 标题 -->
+  <text x="500" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">数据预处理与数据验证模块详细设计</text>
+
+  <!-- 数据预处理模块整体框架 -->
+  <rect x="50" y="100" width="900" height="300" rx="10" ry="10" fill="#eaf4f4" stroke="#0f9d58" stroke-width="2" />
+  <text x="500" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f9d58">数据预处理模块</text>
+
+  <!-- 数据清洗子模块 -->
+  <rect x="100" y="160" width="240" height="220" rx="8" ry="8" fill="#ffffff" stroke="#0f9d58" stroke-width="1" />
+  <text x="220" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f9d58">数据清洗</text>
+  
+  <rect x="120" y="190" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="220" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">缺失值处理</text>
+  
+  <rect x="120" y="230" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="220" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">异常值检测与处理</text>
+  
+  <rect x="120" y="270" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="220" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">重复数据去除</text>
+  
+  <rect x="120" y="310" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="220" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">噪声数据过滤</text>
+
+  <!-- 数据标准化子模块 -->
+  <rect x="380" y="160" width="240" height="220" rx="8" ry="8" fill="#ffffff" stroke="#0f9d58" stroke-width="1" />
+  <text x="500" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f9d58">数据标准化/归一化</text>
+  
+  <rect x="400" y="190" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="500" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Z-Score标准化</text>
+  
+  <rect x="400" y="230" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="500" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Min-Max归一化</text>
+  
+  <rect x="400" y="270" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="500" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Robust缩放</text>
+  
+  <rect x="400" y="310" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="500" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">对数变换</text>
+
+  <!-- 数据转换子模块 -->
+  <rect x="660" y="160" width="240" height="220" rx="8" ry="8" fill="#ffffff" stroke="#0f9d58" stroke-width="1" />
+  <text x="780" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f9d58">数据转换</text>
+  
+  <rect x="680" y="190" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="780" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">类型转换</text>
+  
+  <rect x="680" y="230" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="780" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">One-Hot编码</text>
+  
+  <rect x="680" y="270" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="780" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">标签编码</text>
+  
+  <rect x="680" y="310" width="200" height="30" rx="5" ry="5" fill="#c6ebc9" />
+  <text x="780" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">时间特征提取</text>
+
+  <!-- 数据验证模块整体框架 -->
+  <rect x="50" y="430" width="900" height="350" rx="10" ry="10" fill="#f4f0ec" stroke="#f4b400" stroke-width="2" />
+  <text x="500" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#f4b400">数据验证模块</text>
+
+  <!-- 数据完整性检查子模块 -->
+  <rect x="100" y="490" width="240" height="220" rx="8" ry="8" fill="#ffffff" stroke="#f4b400" stroke-width="1" />
+  <text x="220" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f4b400">数据完整性检查</text>
+  
+  <rect x="120" y="520" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="220" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">必要字段检查</text>
+  
+  <rect x="120" y="560" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="220" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">数据聚合验证</text>
+  
+  <rect x="120" y="600" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="220" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">数据条数验证</text>
+  
+  <rect x="120" y="640" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="220" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">外键完整性检查</text>
+
+  <!-- 数据格式验证子模块 -->
+  <rect x="380" y="490" width="240" height="220" rx="8" ry="8" fill="#ffffff" stroke="#f4b400" stroke-width="1" />
+  <text x="500" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f4b400">数据格式验证</text>
+  
+  <rect x="400" y="520" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="500" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">数据类型校验</text>
+  
+  <rect x="400" y="560" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="500" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">范围/边界检查</text>
+  
+  <rect x="400" y="600" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="500" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">正则表达式匹配</text>
+  
+  <rect x="400" y="640" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="500" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">结构一致性验证</text>
+
+  <!-- 业务规则验证子模块 -->
+  <rect x="660" y="490" width="240" height="220" rx="8" ry="8" fill="#ffffff" stroke="#f4b400" stroke-width="1" />
+  <text x="780" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f4b400">业务规则验证</text>
+  
+  <rect x="680" y="520" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="780" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">领域特定规则检查</text>
+  
+  <rect x="680" y="560" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="780" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">跨字段关系验证</text>
+  
+  <rect x="680" y="600" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="780" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">时序数据一致性</text>
+  
+  <rect x="680" y="640" width="200" height="30" rx="5" ry="5" fill="#ffefd3" />
+  <text x="780" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">业务流程合规性</text>
+
+  <!-- 数据流向 -->
+  <path d="M 500 350 L 500 430" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="520" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#555">预处理后数据</text>
+  
+  <!-- 连接线 -->
+  <path d="M 220 380 L 220 490" stroke="#555" stroke-width="1" stroke-dasharray="5,5" fill="none" />
+  <path d="M 500 380 L 500 490" stroke="#555" stroke-width="1" stroke-dasharray="5,5" fill="none" />
+  <path d="M 780 380 L 780 490" stroke="#555" stroke-width="1" stroke-dasharray="5,5" fill="none" />
+
+  <!-- 输入输出标记 -->
+  <text x="60" y="130" text-anchor="start" font-family="Arial, sans-serif" font-size="14" fill="#333">输入：原始数据</text>
+  <text x="840" y="750" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#333">输出：验证后数据</text>
+
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+</svg>
