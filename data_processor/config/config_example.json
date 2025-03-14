@@ -1,0 +1,75 @@
+{
+    "cleaning": {
+        "missing_values": {
+            "strategy": "auto"
+        },
+        "outliers": {
+            "detection_method": "zscore",
+            "handle": true,
+            "handle_strategy": "winsorize"
+        },
+        "remove_duplicates": true,
+        "duplicate_subset": null,
+        "noise_filtering": {
+            "columns": ["value", "price", "temperature"],
+            "window_size": 3
+        }
+    },
+    "normalization": {
+        "z_score": true,
+        "z_score_columns": ["value"],
+        "min_max": false,
+        "min_max_columns": null,
+        "min_max_range": [0, 1],
+        "robust": false,
+        "robust_columns": null,
+        "log_transform": false,
+        "log_columns": null,
+        "log_base": "e",
+        "log_offset": 1.0
+    },
+    "transformation": {
+        "type_conversion": {
+            "id": "int",
+            "date": "datetime",
+            "price": "float"
+        },
+        "one_hot_encoding": {
+            "columns": ["category", "product_type"],
+            "drop_first": true,
+            "max_categories": 10
+        },
+        "label_encoding": {
+            "columns": ["status", "priority"],
+            "mapping": null
+        },
+        "datetime_features": {
+            "columns": ["date", "created_at"],
+            "features": ["year", "month", "dayofweek", "is_weekend", "hour"]
+        }
+    },
+    "validation": {
+        "completeness": {
+            "required_fields": ["id", "value", "date", "status"],
+            "record_count": {
+                "expected": 1000,
+                "tolerance_percent": 5.0
+            }
+        },
+        "format": {
+            "data_types": {
+                "id": "int",
+                "value": "float",
+                "date": "datetime"
+            },
+            "value_ranges": {
+                "value": {"min": 0, "max": 200, "inclusive": true},
+                "age": {"min": 18, "max": 100, "inclusive": true}
+            },
+            "regex_patterns": {
+                "email": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+                "phone": "^\\+?\\d{10,15}$"
+            }
+        }
+    }
+}
