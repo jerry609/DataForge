@@ -4,6 +4,8 @@
 
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![数据处理架构](pic/data-processing-architecture.svg)
+![数据处理模块](pic/data-processing-modules.svg)
 
 ## 概述
 
