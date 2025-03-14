@@ -49,7 +49,7 @@ DataForge提供了一个强大的框架，用于处理和验证来自各种来�
 
 ```bash
 # 克隆仓库
-git clone https://github.com/jerry609/data-process.git
+git clone https://github.com/jerry609/DataForge.git
 cd data-process/data-processor
 
 # 安装依赖
