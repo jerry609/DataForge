@@ -1,0 +1,77 @@
+{
+    "high_performance": {
+        "enabled": true,
+        "num_workers": null,
+        "scheduler": "processes",
+        "chunk_size": "auto",
+        "optimize_dtypes": true,
+        "use_mmap": true,
+        "gc_threshold": 0.75,
+        "use_async": true,
+        "prefetch_size": 2,
+        "compression": "snappy"
+    },
+    "cleaning": {
+        "missing_values": {
+            "strategy": "auto"
+        },
+        "outliers": {
+            "detection_method": "zscore",
+            "handle": true,
+            "handle_strategy": "winsorize"
+        },
+        "remove_duplicates": true,
+        "noise_filtering": {
+            "columns": [],
+            "window_size": 3
+        }
+    },
+    "normalization": {
+        "z_score": true,
+        "z_score_columns": null,
+        "min_max": false,
+        "min_max_columns": null,
+        "min_max_range": [0, 1],
+        "robust": false,
+        "robust_columns": null,
+        "log_transform": false,
+        "log_columns": null,
+        "log_base": 2.718281828459045,
+        "log_offset": 1.0
+    },
+    "transformation": {
+        "type_conversion": {
+            "date_col": "datetime"
+        },
+        "one_hot_encoding": {
+            "columns": ["cat_col_1", "cat_col_2"],
+            "drop_first": true,
+            "max_categories": 20
+        },
+        "label_encoding": {
+            "columns": []
+        },
+        "datetime_features": {
+            "columns": ["date_col"],
+            "features": ["year", "month", "dayofweek", "is_weekend"]
+        }
+    },
+    "validation": {
+        "completeness": {
+            "required_fields": ["cat_col_1", "cat_col_2", "date_col"]
+        },
+        "format": {
+            "data_types": {
+                "date_col": "datetime"
+            },
+            "value_ranges": {
+                "num_col_0": {"min": -10, "max": 10},
+                "num_col_1": {"min": -10, "max": 10}
+            },
+            "regex_patterns": {}
+        },
+        "business_rules": {
+            "domain_rules": {}
+        }
+    }
+}
